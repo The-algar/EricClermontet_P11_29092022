@@ -9,7 +9,7 @@ const BannerWrapper = styled.div`
   position: relative;
   border-radius: 10px;
   padding-top: 19.71px;
-  margin: 0 10px 0;
+  margin: 0 20px 0;
   @media screen and (min-width: 991px) {
     max-width: 1240px;
     border-radius: 25px;
@@ -25,7 +25,7 @@ const BannerTitle = styled.div`
     display: flex;
     align-items: flex-end;
     color: #FFFFFF;
-    padding: 31px 102px 32px 33px;
+    padding: 31px 85px 32px 33px;
     z-index: 2;
     @media screen and (min-width: 991px) {
         font-size: 3rem;

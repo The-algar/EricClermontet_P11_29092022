@@ -6,9 +6,14 @@ const ErrorWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${colors.backgroundLight};
+  min-width: 395px;
   align-items: center;
-  margin:0!important;
   padding: 0!important;
+  margin: 0 10px 0;
+  @media screen and (min-width: 991px) {
+    max-width: 1240px;
+    margin: 0 100px 0;
+  }
 `
 const Big404 = styled.h1`
   font-weight: 700;

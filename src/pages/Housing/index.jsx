@@ -75,8 +75,8 @@ const DropdownWrapper = styled.section`
         margin: 0 100px 0;
 `
 const HousingDropdown = styled.div`
-    display: bloc;
-    min-width: 395px;    
+    display: block;
+    min-width: 335px;    
       @media screen and (min-width: 991px) {
         width: 100%;
         max-width: 582px;

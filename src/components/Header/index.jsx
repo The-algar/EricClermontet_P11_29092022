@@ -15,11 +15,11 @@ const NavContainer = styled.nav`
   align-items: center;
   position: relative;
   min-width: 345px;
-  padding: 20px 20px 0;
-      margin: 0 10px 0;
+  padding: 20px 0 0;
+  margin: 0 20px 0;
   @media screen and (min-width: 991px) {
     max-width: 1240px;
-        margin: 0 100px 0;
+    margin: 0 100px 0;
     }
 `
 

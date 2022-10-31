@@ -11,7 +11,7 @@ import homeImg from '../../assets/homeBanner.png'
 const CardsContainer = styled.div`
   display: grid;
   grid-template-rows: auto;
-  column-gap : 30px;
+  // column-gap : 30px;
   row-gap: 20px;
   margin: 0 auto;
   min-width: 375px;
@@ -21,8 +21,9 @@ const CardsContainer = styled.div`
   padding-bottom: 22px;
   justify-items: center;
     @media (min-width: 991px) {
-    grid-gap: 60px;
-    row-gap: 40px;
+    max-width: 1140px !important;
+    // grid-gap: 60px;
+    // row-gap: 40px;
     background-color: #f6f6f6;
     grid-template-columns: repeat(2, 1fr);
     // grid-template-rows: auto;
@@ -31,9 +32,8 @@ const CardsContainer = styled.div`
     margin: 43px 100px;
   }
     @media (min-width: 1240px) {
-    max-width: 1140px !important;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 60px;
+    // grid-gap: 60px;
     row-gap: 50px;
     padding: 56px 50px;
     // padding-bottom: 43px;

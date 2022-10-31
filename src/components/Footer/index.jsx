@@ -8,10 +8,10 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     height: 209px;
-    min-width: 395px;
+    min-width: 375px;
     background-color: black;
     color: white;
-    margin: 0 10px 0;
+    margin: 0 -10px 0;
     @media screen and (min-width: 991px) {
       max-width: 1240px;
       padding : 0!important;

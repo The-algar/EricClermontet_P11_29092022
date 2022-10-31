@@ -8,11 +8,11 @@ const CardWrapper = styled.div`
   align-items: center;
   position: relative;
   border-radius: 10px;
-  width: 335px;
+  max-width: 335px;
   height: 255px;
   transition: 200ms;
   @media screen and (min-width: 991px) {
-    width: 340px;
+    max-width: 340px;
     height: 340px;
     }
   &:hover {
@@ -63,7 +63,7 @@ const CardImage = styled.img`
     width: 100%;
     border-radius: 10px;
     @media screen and (min-width: 992px) {
-      width: 340px;
+      max-width: 340px;
       height: 340px;
     }
     

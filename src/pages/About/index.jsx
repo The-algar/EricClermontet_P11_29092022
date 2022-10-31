@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { Loader } from '../../utils/style/Slinks'
-
 import styled from 'styled-components'
 import Banner from '../../components/Banner'
 import Dropdown from '../../components/Dropdown'
@@ -11,8 +8,8 @@ const DropdownWrapper = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 375px;
-    margin: 0 10px;
+    min-width: 335px;
+    margin: 0 20px;
       @media screen and (min-width: 991px) {
         // justify-content: space-around;
         max-width: 1240px;
@@ -20,23 +17,18 @@ const DropdownWrapper = styled.main`
       }
 `
 const AboutDropdown = styled.section`
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding-top: 16.5px;
+    min-width: 335px;
+    padding-top: 16.5px; 
       @media screen and (min-width: 991px) {
         max-width: 1023px;
         padding-top: 36px;
-        // margin: 0 100px 0;
       }
-`
-const LoaderWrapper = styled.div`
-  display: flex;
-  justify-content: center;
 `
 
 function Apropos() {
-const [isLoading] = useState(false)
-const [error] = useState(false)
-
 const aboutData = [
     {
         heading: 'Fiabilité',
@@ -60,10 +52,6 @@ const aboutData = [
     },
 ]
 
-  if (error) {
-    return <span>Oups il y a eu un problème de fetch</span>
-  }
-
   return (
       <div>
         <Banner 
@@ -71,12 +59,7 @@ const aboutData = [
           height="223px" 
           title=""
           description="Montagne enneigée"
-        />       
-        {isLoading ? (
-        <LoaderWrapper>
-          <Loader/>
-        </LoaderWrapper>
-        ) : (      
+        />           
           <DropdownWrapper>
             <AboutDropdown>
             {aboutData.map((el, index) => (
@@ -88,7 +71,6 @@ const aboutData = [
             ))}
             </AboutDropdown>
           </DropdownWrapper>
-        )}
       </div>
   )
 }
