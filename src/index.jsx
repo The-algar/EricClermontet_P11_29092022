@@ -26,7 +26,7 @@ ReactDOM.render(
         <Route path="/housing/:id">
           <Housing />
         </Route>
-        <Route>
+        <Route path= "/*">
           <Error />
         </Route>
       </Switch>
