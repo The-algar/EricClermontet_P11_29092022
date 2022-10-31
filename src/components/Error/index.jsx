@@ -7,11 +7,8 @@ const ErrorWrapper = styled.div`
   flex-direction: column;
   background-color: ${colors.backgroundLight};
   align-items: center;
+  margin:0!important;
   padding: 0!important;
-  margin: 0 10px 0;
-    @media screen and (min-width: 991px) {
-      margin: 0 100px 0;
-    }
 `
 const Big404 = styled.h1`
   font-weight: 700;
@@ -25,15 +22,14 @@ const Big404 = styled.h1`
     }
 `
 const ErrorMessage = styled.h2`
-  display: flex;
-  justify-content: center;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 36px;
   color: ${colors.primary};
-  padding-top: 11px;
-    @media screen and (min-width: 991px) {
-        font-size: 36px;
-        padding-top: 66px;
+  padding-top: 66px;
+  margin:0!important;
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        padding-top: 11px;
     }
 `
 
@@ -47,6 +43,7 @@ function Error() {
       <ErrorLink to="/" $isErrorLink>
           Retourner sur la page d'accueil 
       </ErrorLink>
+        
     </ErrorWrapper>
   )
 }

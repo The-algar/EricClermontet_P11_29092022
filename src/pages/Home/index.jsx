@@ -1,23 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useFetch } from '../../utils/hooks'
 import { Loader } from '../../utils/style/Slinks'
+
 import styled from 'styled-components'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
-import HomeImg from '../../assets/Home-Banner.png'
+import homeImg from '../../assets/homeBanner.png'
 
-// const Gallery = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   max-width: 1240px !important;
-//   background-color: #F6F6F6;
-//   margin: 43px 100px 0;
-//   border-radius: 19px;
-//     @media only screen and (min-width: 992px) {
-//       border-radius: 25px;
-//     }
-// `
  
 const CardsContainer = styled.div`
   display: grid;
@@ -39,7 +28,7 @@ const CardsContainer = styled.div`
     // grid-template-rows: auto;
     border-radius: 25px;
     padding: 56px 50px;
-    margin: 43px 100px !important;
+    margin: 43px 100px;
   }
     @media (min-width: 1240px) {
     max-width: 1140px !important;
@@ -71,7 +60,7 @@ function Home() {
   return (
     <div>
       <Banner 
-        picture={HomeImg}
+        picture={homeImg}
         title="Chez vous, partout et ailleurs"
         description="Rochers en bord de mer"
       />       

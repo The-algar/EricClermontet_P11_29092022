@@ -37,32 +37,24 @@ export const StyledLink = styled(NavLink)`
         // padding-top: 133px;
     }
 `
-// export const ErrorLink = styled(Link)`
-//     color: #FF6060;
-//     text-decoration: none;
-//     font-size: 18px;
-//     font-weight: 500;
-//     padding-top: 182px;
-//     &.a {
-//         font-size: 18px;
-//     }
-//         &:hover {
-//             text-decoration: underline;
-//         }
-// `
-
 export const ErrorLink = styled(Link)`
 color: #FF6060;
 text-decoration: none;
 font-size: 14px;
 font-weight: 500;
 padding-top: 133px;
-padding-bottom: 235px;
+padding-bottom: 235px
   @media screen and (min-width: 991px) {
-      font-size: 18px;
-      padding-top: 182px;
-      padding-bottom: 159px;
+    font-size: 18px;
+    padding-top: 182px;
+    padding-bottom: 159px
     }
+&.a {
+  font-size: 14px;
+      @media screen and (min-width: 991px) {
+    font-size: 18px;
+    }
+  }
 &:hover {
   text-decoration: underline;
         }

@@ -1,4 +1,4 @@
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useFetch } from '../../utils/hooks'
 import { Loader } from '../../utils/style/Slinks'
 import styled from 'styled-components'
@@ -160,7 +160,7 @@ function Housing() {
                         </DropdownWrapper>
                     </div>
                 ) : (
-                    <Redirect to={Error} />
+                    <Error />
                 )
             }
         </>

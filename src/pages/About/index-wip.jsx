@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Loader } from '../../utils/style/Slinks'
 
 import styled from 'styled-components'
@@ -34,31 +34,26 @@ const LoaderWrapper = styled.div`
 `
 
 function Apropos() {
-const [isLoading] = useState(false)
-const [error] = useState(false)
+  const [isLoading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+  const [aboutData, setAboutData] = useState([])
 
-const aboutData = [
-    {
-        heading: 'Fiabilité',
-        description:
-            "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
-    },
-    {
-        heading: 'Respect',
-        description:
-            "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
-    },
-    {
-        heading: 'Service',
-        description:
-            "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
-    },
-    {
-        heading: 'Sécurité',
-        description:
-            "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-    },
-]
+    useEffect(() => {
+    async function fetchAbout() {
+      setLoading(true)
+      try {
+        const response = await fetch('./aboutData.json')
+        const { aboutData } = await response.json()
+        setAboutData(aboutData)
+      } catch (err) {
+        console.log(err)
+        setError(true)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchAbout()
+  }, [])
 
   if (error) {
     return <span>Oups il y a eu un problème de fetch</span>

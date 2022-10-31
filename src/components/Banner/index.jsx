@@ -8,11 +8,13 @@ const BannerWrapper = styled.div`
   min-width: 335px;
   position: relative;
   border-radius: 10px;
-  padding: 19.71px 20px 0 ;
+  padding-top: 19.71px;
+  margin: 0 10px 0;
   @media screen and (min-width: 991px) {
     max-width: 1240px;
     border-radius: 25px;
-    padding: 68.37px 100px 0;
+    padding-top: 68.37px;
+    margin: 0 100px 0;
     }
 `
 const BannerTitle = styled.div`
@@ -33,20 +35,24 @@ const BannerTitle = styled.div`
     }
 }
 `
-
 const BannerImage = styled.img`
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
     width: 100%;
+    min-width: 335px;
     -webkit-filter: brightness(70%);
             filter: brightness(70%);
     border-radius: 10px;
+      @media screen and (min-width: 991px) {
+        max-width: 1240px;
+        border-radius: 25px;
+        }
 `
-function Banner({ title, picture, description }) {
+function Banner({ title, picture, description, height }) {
 
   return (
-    <BannerWrapper>
+    <BannerWrapper style={{ height: height }}>
       <BannerTitle>{title}</BannerTitle>
       <BannerImage src={picture} alt={description} />
     </BannerWrapper>
