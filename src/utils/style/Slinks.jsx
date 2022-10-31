@@ -27,10 +27,15 @@ export const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-size: 24px;
   text-align: center;
-  margin:0!important;
+  margin:0 !important;
   &.active { 
     text-decoration: underline;
   }
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        padding: 133px 0 0 10px;
+        // padding-top: 133px;
+    }
 `
 export const ErrorLink = styled(Link)`
     color: #FF6060;
@@ -44,8 +49,4 @@ export const ErrorLink = styled(Link)`
         &:hover {
             text-decoration: underline;
         }
-    @media max-width: 768px {
-        font-size: 14px;
-        padding-top: 133px;
-    }
 `

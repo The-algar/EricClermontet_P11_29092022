@@ -1,0 +1,20 @@
+.tagComp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6060;
+    height: 18px;
+    padding: 0 20px 0px 20px;
+    margin: 0 10px 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.55em;
+}
+
+@media screen and (min-width: 1000px) {
+    .tagComp {
+        height: 25px;
+        font-size: 0.9em;
+        border-radius: 9px;
+    }
+}
