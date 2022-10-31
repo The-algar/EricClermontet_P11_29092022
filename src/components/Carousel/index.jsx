@@ -1,20 +1,21 @@
 import { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components'
-import chevronLeft from '../../assets/icon/vectorLeft.svg';
-import chevronRight from '../../assets/icon/vectorRight.svg';
+import chevronLeft from '../../assets/icon/chevron-left.svg';
+import chevronRight from '../../assets/icon/chevron-right.svg';
 
 const CarouselSection = styled.section`
   position: relative;
+  display: flex;
   background: #FFFFFF;
   height: 255px;
   min-width: 395px;
-  margin: 0 10px;
   padding: 39px 0 0 0;
-    @media (min-width: 768px) {
+  margin: 0 10px 0;
+    @media (min-width: 991px) {
       height: 415px;
       max-width: 1240px !important;
-      margin: 0 100px;
       padding: 37px 0 0 0;
+      margin: 0 100px 0;
   }
 `
 const CarouselImg = styled.img`
@@ -24,7 +25,7 @@ const CarouselImg = styled.img`
     height: 100%;
     width: 100%;
     border-radius: 10px;
-      @media (min-width: 768px) {
+      @media (min-width: 991px) {
       border-radius: 25px;
       }
 `
@@ -35,7 +36,7 @@ const ChevronLeft = styled.img`
     padding-left: 5.84px;
     height: 19.8px;
     width: 11.67px;
-      @media (min-width: 768px) {
+      @media (min-width: 991px) {
       height: 79.2px;
       width: 46.68px;
       padding-left: 23.36px;
@@ -48,7 +49,7 @@ const ChevronRight = styled.img`
     padding-right: 5.84px;
     height: 19.8px;
     width: 11.67px;
-      @media (min-width: 768px) {
+      @media (min-width: 991px) {
       height: 79.2px;
       width: 46.68px;
       padding-right: 23.36px;
@@ -56,10 +57,7 @@ const ChevronRight = styled.img`
 `
 const HousingCount = styled.h2`
     display: none;
-    &.hide {
-        display: none;
-    }
-      @media (min-width: 768px) {
+      @media (min-width: 991px) {
         display: block;
         position: absolute;
         padding-left:50%;
@@ -68,7 +66,7 @@ const HousingCount = styled.h2`
         color: white;
           &.hide {
           display: none; }
-    }
+          }
 `
 
 export default function Carousel({ housingImgArr }) {
@@ -96,7 +94,6 @@ export default function Carousel({ housingImgArr }) {
         <CarouselSection>
             <CarouselImg src={HousingImg} alt={HousingImg} />
             <ChevronLeft 
-                src={chevronLeft} alt=""
                 ref={chevronL}
                 onClick={() =>
                     updateHousingImg(
@@ -105,10 +102,10 @@ export default function Carousel({ housingImgArr }) {
                             : housingImgArr[housingImgArr.indexOf(HousingImg) - 1]
                     )
                 }
+                src={chevronLeft} alt=""
             >
             </ChevronLeft>
             <ChevronRight
-                src={chevronRight} alt="" 
                 ref={chevronR}
                 onClick={() =>
                     updateHousingImg(
@@ -117,6 +114,7 @@ export default function Carousel({ housingImgArr }) {
                             : housingImgArr[housingImgArr.indexOf(HousingImg) + 1]
                     )
                 }
+                src={chevronRight} alt=""                 
             >
             </ChevronRight>
             <HousingCount 

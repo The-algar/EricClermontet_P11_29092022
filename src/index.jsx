@@ -13,6 +13,17 @@ const GlobalStyle = createGlobalStyle`
     * {
       font-family: 'Montserrat', Helvetica, sans-serif;
     }
+    // body {
+    //   min-width: 395px;
+    //   box-sizing: border-box;
+    //   margin: 0 10px 0;
+    //     @media screen and (min-width: 991px) {
+    //       max-width: 1440px;
+    //       margin: 0 100px 0 !important;
+    // }
+    .hide {
+    display: none;
+    }
 `
 ReactDOM.render(
   <React.StrictMode>
@@ -26,7 +37,10 @@ ReactDOM.render(
         <Route path="/housing/:id">
           <Housing />
         </Route>
-        <Route path= "/*">
+        {/* <Route>
+          <About />
+        </Route> */}
+        <Route path="*">
           <Error />
         </Route>
       </Switch>

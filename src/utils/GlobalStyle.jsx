@@ -4,19 +4,19 @@ const StyledGlobalStyle = createGlobalStyle`
     * {
       font-family: 'Montserrat', Helvetica, sans-serif;
     }
-
-    body {
-    display: flex;
-    justify-content: center;
-    // color: #ff6060;
-    max-width: 1240px;
-    min-width: 375px;
-    align-items: center;
-    margin: 0 !important;
-      @media screen and (min-width: 991px) {
-        margin: 0 100px 0;
-      }
+        /* classes globales */
+    .hide {
+    display: none;
     }
+    // body {
+    //   min-width: 395px;
+    //   box-sizing: border-box;
+    //   margin: 0 10px 0;
+    //     @media screen and (min-width: 991px) {
+    //       max-width: 1440px;
+    //       margin: 0 100px 0 !important;
+    //   }
+    // }
 `
 
 function GlobalStyle() {

@@ -5,7 +5,7 @@ import KasaLogo from '../../assets/home-logo.svg'
 
 const HomeLogo = styled.img`
   height: 47px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 991px) {
         height: 68px;
     }
 `
@@ -14,11 +14,12 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  max-width: 1240px;
-  min-width: 325px;
+  min-width: 345px;
   padding: 20px 20px 0;
-  @media screen and (min-width: 768px) {
-        padding: 40px 100px 0;
+      margin: 0 10px 0;
+  @media screen and (min-width: 991px) {
+    max-width: 1240px;
+        margin: 0 100px 0;
     }
 `
 

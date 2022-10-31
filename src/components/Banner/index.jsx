@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import imgBanner from '../../assets/Home-Banner.png'
 
 const BannerWrapper = styled.div`
   display: flex;
@@ -44,12 +43,12 @@ const BannerImage = styled.img`
             filter: brightness(70%);
     border-radius: 10px;
 `
-function Banner({ title, picture }) {
+function Banner({ title, picture, description }) {
 
   return (
     <BannerWrapper>
       <BannerTitle>{title}</BannerTitle>
-      <BannerImage src={picture} alt={title} />
+      <BannerImage src={picture} alt={description} />
     </BannerWrapper>
   )
 }
@@ -61,7 +60,7 @@ Banner.propTypes = {
 
 Banner.defaultProps = {
   title: '',
-  picture: imgBanner,
+  picture: '',
 }
 
 export default Banner

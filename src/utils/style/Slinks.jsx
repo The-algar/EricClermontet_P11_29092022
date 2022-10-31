@@ -31,22 +31,39 @@ export const StyledLink = styled(NavLink)`
   &.active { 
     text-decoration: underline;
   }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 991px) {
         font-size: 14px;
         padding: 133px 0 0 10px;
         // padding-top: 133px;
     }
 `
+// export const ErrorLink = styled(Link)`
+//     color: #FF6060;
+//     text-decoration: none;
+//     font-size: 18px;
+//     font-weight: 500;
+//     padding-top: 182px;
+//     &.a {
+//         font-size: 18px;
+//     }
+//         &:hover {
+//             text-decoration: underline;
+//         }
+// `
+
 export const ErrorLink = styled(Link)`
-    color: #FF6060;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding-top: 182px;
-    &.a {
-        font-size: 18px;
+color: #FF6060;
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+padding-top: 133px;
+padding-bottom: 235px;
+  @media screen and (min-width: 991px) {
+      font-size: 18px;
+      padding-top: 182px;
+      padding-bottom: 159px;
     }
-        &:hover {
-            text-decoration: underline;
+&:hover {
+  text-decoration: underline;
         }
 `

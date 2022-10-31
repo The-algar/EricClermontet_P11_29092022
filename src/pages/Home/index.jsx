@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useFetch } from '../../utils/hooks'
 import { Loader } from '../../utils/style/Slinks'
-
 import styled from 'styled-components'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
-import bannerImg from '../../assets/Home-Banner.png'
+import HomeImg from '../../assets/Home-Banner.png'
 
 // const Gallery = styled.div`
 //   display: flex;
@@ -43,7 +42,7 @@ const CardsContainer = styled.div`
     margin: 43px 100px !important;
   }
     @media (min-width: 1240px) {
-    max-width: 1240px !important;
+    max-width: 1140px !important;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
     row-gap: 50px;
@@ -72,7 +71,7 @@ function Home() {
   return (
     <div>
       <Banner 
-        image={bannerImg}
+        picture={HomeImg}
         title="Chez vous, partout et ailleurs"
         description="Rochers en bord de mer"
       />       
@@ -81,7 +80,6 @@ function Home() {
           <Loader/>
         </LoaderWrapper>
       ) : (
-        // <Gallery>
         <CardsContainer>
           {data.map(({ id, cover, title }) => {
             return (
@@ -98,7 +96,6 @@ function Home() {
           })
         }
         </CardsContainer>
-        // </Gallery>
       )}
     </div>
   )
