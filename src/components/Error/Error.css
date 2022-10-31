@@ -1,0 +1,53 @@
+.contError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.errormain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.errorIcon {
+    width: 200px;
+    height: 100px;
+    padding-top: 180px;
+    padding-bottom: 9px;
+}
+.errormain p {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 8px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.errorSection {
+    padding: 115px 0 180px 0;
+}
+.errorSection a {
+    color: #ff6060;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.errorSection a:hover {
+    text-decoration: underline;
+}
+
+/* medias queries */
+@media screen and (min-width: 768px) {
+    .errorIcon {
+        width: 582px;
+        height: 210px;
+        padding-bottom: 95px;
+    }
+    .errormain p {
+        font-size: 2em;
+    }
+    .errorSection {
+        padding: 165px 0 165px 0;
+    }
+    .errorSection a {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+}

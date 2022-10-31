@@ -1,0 +1,40 @@
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    padding: 20px 16px 0!important;
+}
+.banner img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+    border-radius: 10px;
+}
+.bannerText {
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    z-index: 2;
+    margin: 20px 15px;
+}
+
+/* medias queries */
+@media screen and (min-width: 992px) {
+    .banner {
+        height: 223px !important;
+        justify-content: center;
+        padding: 63px 100px 0 !important;
+        border-radius: 25px;
+    }
+    .bannerText {
+        font-size: 48px;
+    }
+    .banner img {
+        border-radius: 25px;
+    }
+}
