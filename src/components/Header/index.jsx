@@ -14,8 +14,8 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  min-width: 345px;
-  padding: 20px 0 0;
+  min-width: 325px;
+  padding-top: 20px;
   margin: 0 20px 0;
   @media screen and (min-width: 991px) {
     max-width: 1240px;

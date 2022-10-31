@@ -8,13 +8,13 @@ const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     height: 209px;
-    min-width: 375px;
+    min-width: 405px;
     background-color: black;
     color: white;
-    margin: 0 -10px 0;
+    margin: 0;
     @media screen and (min-width: 991px) {
       max-width: 1240px;
-      padding : 0!important;
+      // padding : 0!important;
       font-size: 1.55em;
       margin : 0 100px 0;
     }
