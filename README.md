@@ -2,14 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Kasa - projet 11 OpenClassrooms**
+# Kasa - projet 11 OpenClassrooms
 
 - git clone https://github.com/The-algar/EricClermontet_P11_29092022
 
-- cd to local repo where EricClermontet_P11_29092022 is installed
+- cd to local repo where 'EricClermontet_P11_29092022' is installed
 
-**Run `npm install`**
+### Run `npm install`
+
 then
+
 ### `npm start`
 Runs the app in the development mode.\
 Browser should open automatically on localhost:3000 if not
