@@ -14,7 +14,7 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px 0;
-  @media screen and (min-width: 992px) {
+  @media min-width: 992px {
         padding: 40px 100px 0;
     }
 `
