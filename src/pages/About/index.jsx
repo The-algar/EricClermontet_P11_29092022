@@ -1,33 +1,7 @@
-// import styled from 'styled-components'
 import Banner from '../../components/Banner'
 import Dropdown from '../../components/Dropdown'
 import aboutImg from '../../assets/aboutBanner.jpg'
 import './About.css'
-
-// const DropdownWrapper = styled.main`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     min-width: 335px;
-//     margin: 0 20px;
-//       @media screen and (min-width: 991px) {
-//         // justify-content: space-around;
-//         max-width: 1240px;
-//         margin: 0 100px;
-//       }
-// `
-// const AboutDropdown = styled.section`
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-//     min-width: 335px;
-//     padding-top: 16.5px; 
-//       @media screen and (min-width: 991px) {
-//         max-width: 1023px;
-//         padding-top: 36px;
-//       }
-// `
 
 function Apropos() {
 const aboutData = [

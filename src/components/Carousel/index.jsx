@@ -1,74 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
-// import styled from 'styled-components'
 import ChevronLeft from '../../assets/icon/chevron-left.svg';
 import ChevronRight from '../../assets/icon/chevron-right.svg';
 import './Carousel.css'
-
-// const CarouselSection = styled.section`
-//   position: relative;
-//   display: flex;
-//   background: #FFFFFF;
-//   height: 255px;
-//   min-width: 395px;
-//   padding: 39px 0 0 0;
-//   margin: 0 10px 0;
-//     @media (min-width: 991px) {
-//       height: 415px;
-//       max-width: 1240px !important;
-//       padding: 37px 0 0 0;
-//       margin: 0 100px 0;
-//   }
-// `
-// const CarouselImg = styled.img`
-//     // position: absolute;
-//     -o-object-fit: cover;
-//        object-fit: cover;
-//     height: 100%;
-//     width: 100%;
-//     border-radius: 10px;
-//       @media (min-width: 991px) {
-//       border-radius: 25px;
-//       }
-// `
-// const ChevronLeft = styled.img`
-//     position: absolute;
-//     top: 50%;
-//     left: 0px;
-//     padding-left: 5.84px;
-//     height: 19.8px;
-//     width: 11.67px;
-//       @media (min-width: 991px) {
-//       height: 79.2px;
-//       width: 46.68px;
-//       padding-left: 23.36px;
-//       }
-// `
-// const ChevronRight = styled.img`
-//     position: absolute;
-//     top: 50%;
-//     right: 0px;
-//     padding-right: 5.84px;
-//     height: 19.8px;
-//     width: 11.67px;
-//       @media (min-width: 991px) {
-//       height: 79.2px;
-//       width: 46.68px;
-//       padding-right: 23.36px;
-//       }
-// `
-// const HousingCount = styled.h2`
-//     display: none;
-//       @media (min-width: 991px) {
-//         display: block;
-//         position: absolute;
-//         padding-left:50%;
-//         bottom: 24.92px;
-//         font-size: 18px;
-//         color: white;
-//           &.hide {
-//           display: none; }
-//           }
-// `
 
 export default function Carousel({ housingImgArr }) {
     
