@@ -1,0 +1,32 @@
+.dropdownWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 335px;
+    margin: 0 20px;
+    }
+@media screen and (min-width: 991px) {
+    .dropdownWrapper {
+      max-width: 1240px;
+      margin: 0 100px;
+    }
+}
+aboutDropdown {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 335px;
+    padding-top: 16.5px;
+    }
+      
+@media screen and (min-width: 991px) {
+    .dropdownWrapper {
+      max-width: 1240px;
+      margin: 0 100px;
+    }
+    .aboutDropdown {
+      max-width: 1023px;
+      padding-top: 36px;
+    }
+}

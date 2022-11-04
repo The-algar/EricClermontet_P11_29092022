@@ -1,47 +1,48 @@
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import FooterLogo from '../../assets/footerLogo.svg';
+import './Footer.css'
 
-const FooterContainer = styled.footer`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 209px;
-    min-width: 405px;
-    background-color: black;
-    color: white;
-    margin: 0;
-    @media screen and (min-width: 991px) {
-      max-width: 1240px;
-      // padding : 0!important;
-      font-size: 1.55em;
-      margin : 0 100px 0;
-    }
-`
-const Logo = styled.img `
-    padding-top: 62px;
-    width: 122px;
-        @media screen and (min-width: 991px) {
-          padding-top: 66px;
-        }
-`
+// const FooterContainer = styled.footer`
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     height: 209px;
+//     min-width: 405px;
+//     background-color: black;
+//     color: white;
+//     margin: 0;
+//     @media screen and (min-width: 991px) {
+//       max-width: 1240px;
+//       // padding : 0!important;
+//       font-size: 1.55em;
+//       margin : 0 100px 0;
+//     }
+// `
+// const Logo = styled.img `
+//     padding-top: 62px;
+//     width: 122px;
+//         @media screen and (min-width: 991px) {
+//           padding-top: 66px;
+//         }
+// `
 
-const FooterCopyright = styled.p `
-    font-size: 12px;
-    padding-bottom: 62px;
-        @media screen and (min-width: 991px) {
-          font-size: 24px;
-          font-weight: 500;
-          padding-bottom: 29px;
-`
+// const FooterCopyright = styled.p `
+//     font-size: 12px;
+//     padding-bottom: 62px;
+//         @media screen and (min-width: 991px) {
+//           font-size: 24px;
+//           font-weight: 500;
+//           padding-bottom: 29px;
+// `
 
 function Footer({ copyright, picture }) {
     return (
-        <FooterContainer>
-            <Logo src={picture} alt="logo Kasa light" />
-            <FooterCopyright {...copyright}>© 2020 Kasa. All rights reserved</FooterCopyright>
-        </FooterContainer>
+        <footer className="footerContainer">
+            <img src={picture} alt="logo Kasa light" />
+            <p className="footerCopyright" {...copyright}>© 2020 Kasa. All rights reserved</p>
+        </footer>
     )
 }
 

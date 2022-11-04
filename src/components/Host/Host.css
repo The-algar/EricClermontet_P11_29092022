@@ -1,0 +1,36 @@
+.hostContainer{
+    display: flex;
+    max-width: 135.5px;
+    padding-top: 0;
+}
+.hostName {
+    text-align: end;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    height: 33px;
+    padding-right: 10.5px;
+    margin: 6px 0 0 0;
+}
+.hostImage {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+    @media screen and (min-width: 991px) {
+      .hostContainer {
+        display: flex;
+        max-width: 196px;
+        padding-top: 24px;
+      }
+      .hostName {
+        align-content: center;
+        font-size: 18px;
+        height: 52px;
+        padding-right: 10px;
+      }
+      .hostImage {
+        width: 64px;
+        height: 64px;
+      }
+}

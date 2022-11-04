@@ -1,0 +1,10 @@
+    * {
+      font-family: 'Montserrat', Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    .hide {
+    display: none;
+    }

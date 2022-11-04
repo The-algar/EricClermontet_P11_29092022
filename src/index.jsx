@@ -7,12 +7,11 @@ import Housing from './pages/Housing'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
-import GlobalStyle from './utils/style/GlobalStyle'
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/">
@@ -24,7 +23,7 @@ ReactDOM.render(
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/*">
+        <Route path="*">
           <Error />
         </Route>
       </Switch>

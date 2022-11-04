@@ -1,0 +1,49 @@
+.bannerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 335px;
+    position: relative;
+    border-radius: 10px;
+    padding-top: 19.71px;
+    margin: 0 20px;
+}
+.bannerTitle{
+    position: absolute;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 31px 85px 32px 33px;
+    z-index: 2;
+}
+.bannerWrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 335px;
+    max-width: 1240px;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+    border-radius: 10px;
+}
+
+/* medias queries */
+@media screen and (min-width: 991px) {
+    .bannerWrapper {
+        max-width: 1240px;
+        border-radius: 25px;
+        padding-top: 68.37px;
+        margin: 0 100px 0;
+        }
+    .bannerTitle {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 68.45px;
+    }
+    .bannerWrapper img {
+        max-width: 1240px;
+        border-radius: 25px;
+    }
+}

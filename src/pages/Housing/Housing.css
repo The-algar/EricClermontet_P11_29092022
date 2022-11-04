@@ -1,0 +1,117 @@
+.HousingMain { 
+    min-width: 375px;
+    margin: 0 10px 0;
+    padding-bottom: 16.5px;
+}
+@media screen and (min-width: 991px) {
+  .housingMain {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    padding-bottom: 36px;
+    margin: 0 100px 0;
+    }
+}
+.housingTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    margin: 15px 0 0 0;
+    Line-height: 25.67px;
+    }
+  @media screen and (min-width: 991px) {
+    .housingTitle {
+      padding-top: 30px;
+      margin:0;
+      font-size: 36px;
+      Line-height: 51.34px;
+      }
+  }
+.housingLocation {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff6060;
+    Line-height: 19.87px;
+    margin: 0;
+    }
+  @media screen and (min-width: 991px) {
+    .housingLocation {
+      font-size: 18px;
+      Line-height: 25.67px; 
+      margin:0!important;
+    }
+  }
+.housingTags {
+    display: flex;
+    flex: wrap;
+    }
+.hostAndRatingWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6.5px;    
+    align-items: center !important;
+    }
+  @media screen and (min-width: 991px) {
+    .hostAndRatingWrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+.dropdownWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 395px;
+    margin: 0 10px 0;
+  }
+  @media screen and (min-width: 991px) {
+    .dropdownWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1240px;
+      margin: 0 100px 0;
+    }
+  }
+.housingDropdown {
+    display: block;
+    min-width: 335px;    
+  }
+  @media screen and (min-width: 991px) {
+    .housingDropdown {
+      width: 100%;
+      max-width: 582px;
+      }
+  }
+  .loaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+.Loader {
+    padding: 10px;
+    border: 6px solid #FF6060;
+    border-bottom-color: transparent;
+    border-radius: 22px;
+    -webkit-animation: rotation 1s infinite linear;
+            animation: rotation 1s infinite linear;
+    height: 0;
+    width: 0;
+}
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

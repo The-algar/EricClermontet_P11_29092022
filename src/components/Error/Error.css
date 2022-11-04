@@ -1,0 +1,62 @@
+    .errorWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    min-width: 395px;
+    align-items: center;
+    padding: 0!important;
+    margin: 0 10px 0;
+  }
+    .big404 {
+        font-size: 96px;
+        padding-top: 195px;
+    }
+    .errorMessage {
+        font-size: 18px;
+        padding-top: 11px;
+    }
+    .errorLink, a {
+    font-size: 18px;
+    padding-top: 182px;
+    margin-bottom: 159px;
+    }
+    .errorLink, a:hover {
+    text-decoration: underline;
+    }
+
+
+/* media queries */
+      
+@media screen and (min-width: 991px) {
+    .errorWrapper {
+      max-width: 1240px;
+      margin: 0 100px 0;
+    }
+    .big404 {
+      font-weight: 700;
+      font-size: 288px;
+      color: #FF6060;
+      margin: 0!important;
+      padding-top: 169px !important;
+    }
+.errorMessage {
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    padding-top: 66px;
+    margin:0 !important;
+}
+.errorLink {
+color: #FF6060;
+text-decoration: none;
+font-size: 14px;
+font-weight: 500;
+padding-top: 133px;
+margin-bottom: 235px;
+}
+.errorLink a {
+  font-size: 14px;
+}
+}
+
+
