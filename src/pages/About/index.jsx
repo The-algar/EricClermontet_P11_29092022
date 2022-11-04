@@ -61,7 +61,7 @@ const aboutData = [
           title=""
           description="Montagne enneigée"
         />           
-          <main className="dropdownWrapper">
+          <section className="dropdownContainer">
             <div className="aboutDropdown">
             {aboutData.map((el, index) => (
               <Dropdown
@@ -71,7 +71,7 @@ const aboutData = [
               />
             ))}
             </div>
-          </main>
+          </section>
       </div>
   )
 }

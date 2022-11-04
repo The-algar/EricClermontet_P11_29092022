@@ -145,7 +145,7 @@ function Housing() {
                                 />
                             </div>
                         </main>
-                        <section className="dropdownWrapper">
+                        <section className="dropdownComponent">
                             <div className="housingDropdown">
                                 <Dropdown
                                     heading="Description"

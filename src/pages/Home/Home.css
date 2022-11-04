@@ -12,6 +12,8 @@
 }
   @media screen and (min-width: 991px) {
     .cardsContainer {
+    display: grid;
+    grid-template-rows: auto;
     max-width: 1240px;
     background-color: #f6f6f6;
     grid-template-columns: repeat(2, 1fr);

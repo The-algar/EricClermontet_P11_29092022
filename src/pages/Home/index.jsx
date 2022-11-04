@@ -6,7 +6,7 @@ import { useFetch } from '../../utils/hooks'
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import homeImg from '../../assets/homeBanner.png'
-
+import './Home.css'
  
 // const CardsContainer = styled.div`
 //   display: grid;
@@ -69,7 +69,7 @@ function Home() {
           <div className="Loader"/>
         </div>
       ) : (
-        <div className="cardsContainer">
+        <section className="cardsContainer">
           {data.map(({ id, cover, title }) => {
             return (
               <Link
@@ -84,7 +84,7 @@ function Home() {
             );
           })
         }
-        </div>
+        </section>
       )}
     </>
   )

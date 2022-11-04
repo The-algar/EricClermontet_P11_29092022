@@ -1,16 +1,29 @@
 .DropdownWrapper {
     padding-bottom: 20px;
 }
-.dropdownHeading {
+@media screen and (min-width: 991px) {
+    .DropdownWrapper {
+        padding-bottom: 20px;
+    }
+}
+.dropdownHeader {
     position: relative;
     height: 29.93px;
+    width: 100%;
     background-color: #ff6060;
     color: white;
     cursor: pointer;
     margin-bottom: 20px;
     border-radius: 5px;
 }
-.dropdownHeader {
+@media screen and (min-width: 991px) {
+    .dropdownHeader {
+        height: 52px;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.dropdownTitle {
     display: flex;
     align-items: center;
     margin: 0px;
@@ -18,6 +31,14 @@
     font-weight: 500;
     padding-top: 5.48px;
     padding-left: 12px;
+}
+@media screen and (min-width: 991px) {
+    .dropdownTitle {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 13px;
+    padding-left: 19px;
+    }
 }
 .chevron {
     position: absolute;
@@ -28,6 +49,14 @@
     top: 10.24px;
     transform: rotate(-180deg);
 }
+@media screen and (min-width: 991px) {
+    .chevron {
+        width: 26.4px;
+        height: 15.56px;
+        right: 25px;
+        top: 17.79px;
+    }
+}
 .clickedChevron {
     position: absolute;
     align-items: center;
@@ -36,6 +65,16 @@
     right: 14.39px;
     top: 10.24px;
     background-color: #ff6060;
+}
+@media screen and (min-width: 991px) {
+    .clickedChevron {
+        position: absolute;
+        width: 26.4px;
+        height: 15.56px;
+        right: 25px;
+        top: 17.79px;
+        background-color: #ff6060;
+    }
 }
 .clickedChevron:active {
     transform: rotate(0deg);
@@ -49,11 +88,24 @@
     border-radius: 10px;
     z-index: -2;
 }
+@media screen and (min-width: 991px) {
+    .dropdownContent {
+        width: 100%;
+        top: -40px;
+    }
+}
 .dropdownContent p {
     font-size: 12px;
     font-weight: 400;
     margin: 0px;
     padding: 23.02px 6.91px 1.3px 11.51px;
+}
+@media screen and (min-width: 991px) {
+    .dropdownContent p {
+        font-size: 18px;
+        margin: 0px;
+        padding: 40px 12px 53px 20px;
+    }
 }
 .dropdownContent ul {
     list-style: none;
@@ -62,57 +114,19 @@
     margin: 0px;
     padding: 23.02px 6.91px 1.3px 11.51px;
 }
-.dropdownContent li {
-    line-height: 20px;
-}
-
-/* medias queries */
 @media screen and (min-width: 991px) {
-    .DropdownWrapper {
-        padding-bottom: 20px;
-    }
-    .dropdownHeading {
-        height: 52px;
-        border-radius: 10px;
-    }
-    .dropdownHeader {
-        font-weight: 500;
-        font-size: 18px;
-        padding-top: 13px;
-        padding-left: 19px;
-    }
-    .chevron {
-        width: 26.4px;
-        height: 15.56px;
-        right: 25px;
-        top: 17.79px;
-    }
-    .clickedChevron {
-        position: absolute;
-        width: 26.4px;
-        height: 15.56px;
-        right: 25px;
-        top: 17.79px;
-        background-color: #ff6060;
-    }
-    .clickedChevron:active {
-        transform: rotate(0deg);
-        transition: transform 0.3s ease-in-out;
-    }
-    .dropdownContent {
-        top: -40px;
-    }
-    .dropdownContent p {
-        font-size: 18px;
-        margin: 0px;
-        padding: 40px 12px 53px 20px;
-    }
     .dropdownContent ul {
         font-size: 18px;
         padding-top: 40px;
         padding-bottom: 20px;
     }
+}
+    
+.dropdownContent li {
+    line-height: 20px;
+}
+@media screen and (min-width: 991px) {
     .dropdownContent li {
         Line-height: 25.67px;
-    }
+    }  
 }

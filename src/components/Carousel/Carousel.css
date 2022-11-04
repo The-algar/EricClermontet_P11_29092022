@@ -3,9 +3,17 @@
     display: flex;
     background: #FFFFFF;
     height: 255px;
-    min-width: 395px;
+    min-width: 335px;
     padding: 39px 0 0 0;
     margin: 0 10px 0;
+}
+@media screen and (min-width: 991px) {
+    .carouselSection {
+        height: 415px;
+        max-width: 1240px !important;
+        padding: 37px 0 0 0;
+        margin: 0 100px 0;
+    }
 }
 .carouselImg {
     -o-object-fit: cover;
@@ -14,52 +22,48 @@
     width: 100%;
     border-radius: 10px;
 }
-.chevronLeft {
+@media screen and (min-width: 991px) {
+    .carouselImg {
+        border-radius: 25px;
+    }
+}
+.chevronLeft img {
     position: absolute;
     top: 50%;
     left: 0px;
     padding-left: 5.84px;
     height: 19.8px;
-    width: 11.67px;
+    width: 19.8px;
 }
-.chevronRight {
+@media screen and (min-width: 991px) {
+    .chevronLeft img {
+        position: absolute;
+        height: 79.2px;
+        width: 79.2px;
+        padding-left: 23.36px;
+    }
+}
+.chevronRight img {
     position: absolute;
     top: 50%;
     right: 0px;
     padding-right: 5.84px;
     height: 19.8px;
-    width: 11.67px;
+    width: 19.8px;
 }
-.housingCount, h2 {
-    display: none;
-}
-
-/* medias queries */
 @media screen and (min-width: 991px) {
-    .carouselSection {
-        height: 415px;
-        max-width: 1240px !important;
-        padding: 37px 0 0 0;
-        margin: 0 100px 0;
-    }
-    .carouselImg {
-        border-radius: 25px;
-    }
-    .chevronLeft,
-    .chevronRight {
+    .chevronRight img {
         position: absolute;
-    }
-    .chevronLeft {
         height: 79.2px;
-        width: 46.68px;
-        padding-left: 23.36px;
-    }
-    .chevronRight {
-        height: 79.2px;
-        width: 46.68px;
+        width: 79.2px;
         padding-right: 23.36px;
     }
-    .housingCount, h2 {
+}
+.housingCount {
+    display: none;
+}
+@media screen and (min-width: 991px) {
+    .housingCount {
         display: block;
         position: absolute;
         padding-left:50%;
@@ -67,6 +71,8 @@
         font-size: 18px;
         color: white;
     }
+}
+@media screen and (min-width: 991px) {
     .housingCount.hide {
         display: none;
     }

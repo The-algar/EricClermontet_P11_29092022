@@ -1,10 +1,10 @@
 .HousingMain { 
-    min-width: 375px;
+    min-width: 335px;
     margin: 0 10px 0;
     padding-bottom: 16.5px;
 }
 @media screen and (min-width: 991px) {
-  .housingMain {
+  .HousingMain {
     display: flex;
     justify-content: space-between;
     max-width: 1240px;
@@ -48,24 +48,25 @@
 .hostAndRatingWrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 6.5px;    
+    padding-top: 6.5px;  
     align-items: center !important;
     }
   @media screen and (min-width: 991px) {
     .hostAndRatingWrapper {
       display: flex;
+      min-width: 200px;  
       flex-direction: column-reverse;
     }
   }
-.dropdownWrapper {
+.dropdownComponent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 395px;
+    min-width: 335px;
     margin: 0 10px 0;
   }
   @media screen and (min-width: 991px) {
-    .dropdownWrapper {
+    .dropdownComponent {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -83,9 +84,10 @@
       max-width: 582px;
       }
   }
-  .loaderWrapper {
-  display: flex;
-  justify-content: center;
+
+.loaderWrapper {
+display: flex;
+justify-content: center;
 }
 .Loader {
     padding: 10px;

@@ -7,7 +7,7 @@
     padding-top: 20px;
     margin: 0 20px 0;
 }
-a {
+.navContainer a {
     font-size: 14px;
     font-weight: 500;
     color: #FF6060;
@@ -15,7 +15,7 @@ a {
     padding: 10px 5px;
     margin: 0;
 }
-a.isActive {
+.navContainer a.isActive {
     text-decoration: underline;
 }
 /* a.inactive {
@@ -30,7 +30,7 @@ a.isActive {
     .homeLogo {
         height: 68px !important;
     }
-    a {
+    .navContainer a {
     font-size: 24px;
     font-weight: 500;
     padding: 10px 15px;

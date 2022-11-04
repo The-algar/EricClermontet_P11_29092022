@@ -1,7 +1,7 @@
 import { useState } from "react";
 import chevron from '../../assets/icon/chevron.svg';
 // import styled from 'styled-components'
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './Dropdown.css'
 
 // const DropdownWrapper = styled.section`
@@ -118,11 +118,11 @@ function Dropdown({ heading, content }) {
   const toggleState = () => setToggle(!toggle,);
 
     return (
-        <section className="dropdownWrapper">
+        <div className="dropdownWrapper">
           <div onClick={toggleState}
-            className="dropdownHeading"
+            className="dropdownHeader"
             >
-            <p className="dropdownHeader">{heading}</p>
+            <h2 className="dropdownTitle">{heading}</h2>
             <img className="chevron" onClick={toggleState} src={chevron} alt="" />
 
           { toggle && (
@@ -143,24 +143,24 @@ function Dropdown({ heading, content }) {
               ) : (<p>{content}</p>)
             }
           </div>)}
-    </section>
+    </div>
   );
 }
 
-Dropdown.propTypes = {
-    heading: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]),
-    content: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]),
-}
+// Dropdown.propTypes = {
+//     heading: PropTypes.oneOfType([
+//     PropTypes.string,
+//     PropTypes.array,
+//   ]),
+//     content: PropTypes.oneOfType([
+//     PropTypes.string,
+//     PropTypes.array,
+//   ]),
+// }
 
-Dropdown.defaultProps = {
-  heading: '',
-  content: '',
-}
+// Dropdown.defaultProps = {
+//   heading: '',
+//   content: '',
+// }
 
 export default Dropdown;
